@@ -1,0 +1,174 @@
+/* Container styling */
+#ohsa-quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #edf4fb; /* Updated background color */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide quiz steps initially */
+.quiz-step {
+    display: none;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #0a0935; /* Updated button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 5px; /* Spacing between buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d0a57; /* Slightly darker shade on hover */
+}
+
+/* Result styling */
+#quiz-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Progress bar styling */
+#progress-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#question-counter {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #0a0935; /* Updated progress bar color */
+    transition: width 0.3s;
+}
+
+/* Feedback message styling */
+.feedback-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0a0935; /* Updated feedback popup color */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    font-size: 16px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #0a0935; /* Updated border color */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked {
+    background-color: #0a0935; /* Updated checked color */
+    border-color: #0a0935;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+}
+
+/* Label styling for radio buttons */
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+
+#social-share-icons a {
+    font-size: 24px;
+    color: #333;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+#social-share-icons a:hover {
+    color: #007bff; /* Customize the hover color as needed */
+}
+
+
+/* Container styling */
+#social-share-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button styling */
+#social-share-icons a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3b5998; /* Default Facebook color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Icon styling */
+#social-share-icons a i {
+    margin-right: 8px;
+}
+
+/* Hover effects and specific colors */
+#share-facebook { background-color: #3b5998; } /* Facebook color */
+#share-facebook:hover { background-color: #2d4373; }
+
+#share-whatsapp { background-color: #25D366; } /* WhatsApp color */
+#share-whatsapp:hover { background-color: #1ebe5d; }
+
+#share-instagram { background-color: #E1306C; } /* Instagram color */
+#share-instagram:hover { background-color: #bc2a57; }
+
